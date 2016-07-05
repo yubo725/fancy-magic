@@ -45,7 +45,7 @@ public class MainActivity extends BaseActivity {
         monthPagerView = new MonthPagerView(this);
         viewList.add(cityPagerView);
         viewList.add(monthPagerView);
-        for(int i = 0; i < 3; i++) {
+        for(int i = 0; i < 2; i++) {
             viewList.add(new PagerView(this));
         }
         adapter = new ViewPagerAdapter(viewList);
