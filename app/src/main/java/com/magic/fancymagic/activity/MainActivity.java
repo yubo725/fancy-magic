@@ -51,6 +51,8 @@ public class MainActivity extends BaseActivity {
         viewList.add(spiritPagerView);
         adapter = new ViewPagerAdapter(viewList);
         viewPager.setAdapter(adapter);
+        //去掉滑动到头的效果
+        viewPager.setOverScrollMode(View.OVER_SCROLL_NEVER);
 
         viewPagerContainer.setOnTouchListener(new View.OnTouchListener() {
             @Override
