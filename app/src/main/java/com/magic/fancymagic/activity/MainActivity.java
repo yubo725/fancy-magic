@@ -11,6 +11,7 @@ import com.magic.fancymagic.adapter.ViewPagerAdapter;
 import com.magic.fancymagic.view.CityPagerView;
 import com.magic.fancymagic.view.MonthPagerView;
 import com.magic.fancymagic.view.PagerView;
+import com.magic.fancymagic.view.SpiritPagerView;
 
 import net.tsz.afinal.annotation.view.ViewInject;
 
@@ -28,6 +29,7 @@ public class MainActivity extends BaseActivity {
     private ViewPagerAdapter adapter;
     private CityPagerView cityPagerView;
     private MonthPagerView monthPagerView;
+    private SpiritPagerView spiritPagerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,11 +45,10 @@ public class MainActivity extends BaseActivity {
         List<View> viewList = new ArrayList<>();
         cityPagerView = new CityPagerView(this);
         monthPagerView = new MonthPagerView(this);
+        spiritPagerView = new SpiritPagerView(this);
         viewList.add(cityPagerView);
         viewList.add(monthPagerView);
-        for(int i = 0; i < 3; i++) {
-            viewList.add(new PagerView(this));
-        }
+        viewList.add(spiritPagerView);
         adapter = new ViewPagerAdapter(viewList);
         viewPager.setAdapter(adapter);
 

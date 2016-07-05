@@ -21,6 +21,64 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+        <ImageView
+            android:src="@mipmap/city01"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/city02"
+            android:scaleType="centerInside"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/city03"
+            android:scaleType="centerInside"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/city04"
+            android:scaleType="centerInside"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/city05"
+            android:scaleType="centerInside"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/city06"
+            android:scaleType="centerInside"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:gravity="bottom|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:background="@drawable/cancel_btn_selector"
+                android:text="开始"
+                android:layout_marginBottom="30dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_width="150dp"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>

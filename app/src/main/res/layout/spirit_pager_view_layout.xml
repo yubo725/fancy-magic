@@ -15,42 +15,21 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:src="@mipmap/img_month"
+            android:src="@mipmap/img_spirit"
             android:layout_marginTop="50dp"
             android:scaleType="centerInside"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <ImageView
-            android:src="@mipmap/month01"
+            android:src="@mipmap/spirit01"
             android:layout_marginTop="30dp"
             android:scaleType="centerInside"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <ImageView
-            android:src="@mipmap/month02"
-            android:scaleType="centerInside"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <ImageView
-            android:src="@mipmap/month03"
-            android:scaleType="centerInside"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <ImageView
-            android:src="@mipmap/month04"
-            android:scaleType="centerInside"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <ImageView
-            android:src="@mipmap/month05"
+            android:src="@mipmap/spirit02"
             android:scaleType="centerInside"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
