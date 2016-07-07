@@ -10,7 +10,6 @@ import com.magic.fancymagic.R;
 import com.magic.fancymagic.adapter.ViewPagerAdapter;
 import com.magic.fancymagic.view.CityPagerView;
 import com.magic.fancymagic.view.MonthPagerView;
-import com.magic.fancymagic.view.PagerView;
 import com.magic.fancymagic.view.SpiritPagerView;
 
 import net.tsz.afinal.annotation.view.ViewInject;
