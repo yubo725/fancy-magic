@@ -1,0 +1,1082 @@
+[
+    {
+        "cityName": "北京市",
+        "firstLetter": "B",
+        "id": 1
+    },
+    {
+        "cityName": "天津市",
+        "firstLetter": "T",
+        "id": 2
+    },
+    {
+        "cityName": "邯郸市",
+        "firstLetter": "H",
+        "id": 3
+    },
+    {
+        "cityName": "保定市",
+        "firstLetter": "B",
+        "id": 4
+    },
+    {
+        "cityName": "承德市",
+        "firstLetter": "C",
+        "id": 5
+    },
+    {
+        "cityName": "唐山市",
+        "firstLetter": "T",
+        "id": 6
+    },
+    {
+        "cityName": "廊坊市",
+        "firstLetter": "L",
+        "id": 7
+    },
+    {
+        "cityName": "沧州市",
+        "firstLetter": "C",
+        "id": 8
+    },
+    {
+        "cityName": "衡水市",
+        "firstLetter": "H",
+        "id": 9
+    },
+    {
+        "cityName": "邢台市",
+        "firstLetter": "X",
+        "id": 10
+    },
+    {
+        "cityName": "朔州市",
+        "firstLetter": "S",
+        "id": 11
+    },
+    {
+        "cityName": "忻州市",
+        "firstLetter": "X",
+        "id": 12
+    },
+    {
+        "cityName": "太原市",
+        "firstLetter": "T",
+        "id": 13
+    },
+    {
+        "cityName": "阳泉市",
+        "firstLetter": "Y",
+        "id": 14
+    },
+    {
+        "cityName": "晋中市",
+        "firstLetter": "J",
+        "id": 15
+    },
+    {
+        "cityName": "晋城市",
+        "firstLetter": "J",
+        "id": 16
+    },
+    {
+        "cityName": "临汾市",
+        "firstLetter": "L",
+        "id": 17
+    },
+    {
+        "cityName": "吕梁市",
+        "firstLetter": "L",
+        "id": 18
+    },
+    {
+        "cityName": "运城市",
+        "firstLetter": "Y",
+        "id": 19
+    },
+    {
+        "cityName": "铁岭市",
+        "firstLetter": "T",
+        "id": 20
+    },
+    {
+        "cityName": "鞍山市",
+        "firstLetter": "A",
+        "id": 21
+    },
+    {
+        "cityName": "抚顺市",
+        "firstLetter": "F",
+        "id": 22
+    },
+    {
+        "cityName": "本溪市",
+        "firstLetter": "B",
+        "id": 23
+    },
+    {
+        "cityName": "丹东市",
+        "firstLetter": "D",
+        "id": 24
+    },
+    {
+        "cityName": "锦州市",
+        "firstLetter": "J",
+        "id": 25
+    },
+    {
+        "cityName": "营口市",
+        "firstLetter": "Y",
+        "id": 26
+    },
+    {
+        "cityName": "阜新市",
+        "firstLetter": "F",
+        "id": 27
+    },
+    {
+        "cityName": "辽阳市",
+        "firstLetter": "L",
+        "id": 28
+    },
+    {
+        "cityName": "盘锦市",
+        "firstLetter": "P",
+        "id": 29
+    },
+    {
+        "cityName": "吉林市",
+        "firstLetter": "J",
+        "id": 30
+    },
+    {
+        "cityName": "四平市",
+        "firstLetter": "S",
+        "id": 31
+    },
+    {
+        "cityName": "白城市",
+        "firstLetter": "B",
+        "id": 32
+    },
+    {
+        "cityName": "辽源市",
+        "firstLetter": "L",
+        "id": 33
+    },
+    {
+        "cityName": "松原市",
+        "firstLetter": "S",
+        "id": 34
+    },
+    {
+        "cityName": "白山市",
+        "firstLetter": "B",
+        "id": 35
+    },
+    {
+        "cityName": "鸡西市",
+        "firstLetter": "J",
+        "id": 36
+    },
+    {
+        "cityName": "鹤岗市",
+        "firstLetter": "H",
+        "id": 37
+    },
+    {
+        "cityName": "绥化市",
+        "firstLetter": "S",
+        "id": 38
+    },
+    {
+        "cityName": "黑河市",
+        "firstLetter": "H",
+        "id": 39
+    },
+    {
+        "cityName": "伊春市",
+        "firstLetter": "Y",
+        "id": 40
+    },
+    {
+        "cityName": "镇江市",
+        "firstLetter": "Z",
+        "id": 41
+    },
+    {
+        "cityName": "苏州市",
+        "firstLetter": "S",
+        "id": 42
+    },
+    {
+        "cityName": "扬州市",
+        "firstLetter": "Y",
+        "id": 43
+    },
+    {
+        "cityName": "盐城市",
+        "firstLetter": "Y",
+        "id": 44
+    },
+    {
+        "cityName": "徐州市",
+        "firstLetter": "X",
+        "id": 45
+    },
+    {
+        "cityName": "淮安市",
+        "firstLetter": "H",
+        "id": 46
+    },
+    {
+        "cityName": "常州市",
+        "firstLetter": "C",
+        "id": 47
+    },
+    {
+        "cityName": "泰州市",
+        "firstLetter": "T",
+        "id": 48
+    },
+    {
+        "cityName": "舟山市",
+        "firstLetter": "Z",
+        "id": 49
+    },
+    {
+        "cityName": "衢州市",
+        "firstLetter": "Q",
+        "id": 50
+    },
+    {
+        "cityName": "杭州市",
+        "firstLetter": "H",
+        "id": 51
+    },
+    {
+        "cityName": "湖州市",
+        "firstLetter": "H",
+        "id": 52
+    },
+    {
+        "cityName": "嘉兴市",
+        "firstLetter": "J",
+        "id": 53
+    },
+    {
+        "cityName": "绍兴市",
+        "firstLetter": "S",
+        "id": 54
+    },
+    {
+        "cityName": "温州市",
+        "firstLetter": "W",
+        "id": 55
+    },
+    {
+        "cityName": "金华市",
+        "firstLetter": "J",
+        "id": 56
+    },
+    {
+        "cityName": "芜湖市",
+        "firstLetter": "W",
+        "id": 57
+    },
+    {
+        "cityName": "淮南市",
+        "firstLetter": "H",
+        "id": 58
+    },
+    {
+        "cityName": "淮北市",
+        "firstLetter": "H",
+        "id": 59
+    },
+    {
+        "cityName": "铜陵市",
+        "firstLetter": "T",
+        "id": 60
+    },
+    {
+        "cityName": "安庆市",
+        "firstLetter": "A",
+        "id": 61
+    },
+    {
+        "cityName": "黄山市",
+        "firstLetter": "H",
+        "id": 62
+    },
+    {
+        "cityName": "滁州市",
+        "firstLetter": "C",
+        "id": 63
+    },
+    {
+        "cityName": "阜阳市",
+        "firstLetter": "F",
+        "id": 64
+    },
+    {
+        "cityName": "巢湖市",
+        "firstLetter": "C",
+        "id": 65
+    },
+    {
+        "cityName": "亳州市",
+        "firstLetter": "B",
+        "id": 66
+    },
+    {
+        "cityName": "池州市",
+        "firstLetter": "C",
+        "id": 67
+    },
+    {
+        "cityName": "宣城市",
+        "firstLetter": "X",
+        "id": 68
+    },
+    {
+        "cityName": "福州市",
+        "firstLetter": "F",
+        "id": 69
+    },
+    {
+        "cityName": "莆田市",
+        "firstLetter": "P",
+        "id": 70
+    },
+    {
+        "cityName": "泉州市",
+        "firstLetter": "Q",
+        "id": 71
+    },
+    {
+        "cityName": "漳州市",
+        "firstLetter": "Z",
+        "id": 72
+    },
+    {
+        "cityName": "龙岩市",
+        "firstLetter": "L",
+        "id": 73
+    },
+    {
+        "cityName": "三明市",
+        "firstLetter": "S",
+        "id": 74
+    },
+    {
+        "cityName": "鹰潭市",
+        "firstLetter": "Y",
+        "id": 75
+    },
+    {
+        "cityName": "新余市",
+        "firstLetter": "X",
+        "id": 76
+    },
+    {
+        "cityName": "九江市",
+        "firstLetter": "J",
+        "id": 77
+    },
+    {
+        "cityName": "抚州市",
+        "firstLetter": "F",
+        "id": 78
+    },
+    {
+        "cityName": "宜春市",
+        "firstLetter": "Y",
+        "id": 79
+    },
+    {
+        "cityName": "吉安市",
+        "firstLetter": "J",
+        "id": 80
+    },
+    {
+        "cityName": "赣州市",
+        "firstLetter": "G",
+        "id": 81
+    },
+    {
+        "cityName": "萍乡市",
+        "firstLetter": "P",
+        "id": 82
+    },
+    {
+        "cityName": "菏泽市",
+        "firstLetter": "H",
+        "id": 83
+    },
+    {
+        "cityName": "青岛市",
+        "firstLetter": "Q",
+        "id": 84
+    },
+    {
+        "cityName": "淄博市",
+        "firstLetter": "Z",
+        "id": 85
+    },
+    {
+        "cityName": "德州市",
+        "firstLetter": "D",
+        "id": 86
+    },
+    {
+        "cityName": "潍坊市",
+        "firstLetter": "W",
+        "id": 87
+    },
+    {
+        "cityName": "泰安市",
+        "firstLetter": "T",
+        "id": 88
+    },
+    {
+        "cityName": "临沂市",
+        "firstLetter": "L",
+        "id": 89
+    },
+    {
+        "cityName": "滨州市",
+        "firstLetter": "B",
+        "id": 90
+    },
+    {
+        "cityName": "东营市",
+        "firstLetter": "D",
+        "id": 91
+    },
+    {
+        "cityName": "威海市",
+        "firstLetter": "W",
+        "id": 92
+    },
+    {
+        "cityName": "枣庄市",
+        "firstLetter": "Z",
+        "id": 93
+    },
+    {
+        "cityName": "日照市",
+        "firstLetter": "R",
+        "id": 94
+    },
+    {
+        "cityName": "莱芜市",
+        "firstLetter": "L",
+        "id": 95
+    },
+    {
+        "cityName": "聊城市",
+        "firstLetter": "L",
+        "id": 96
+    },
+    {
+        "cityName": "商丘市",
+        "firstLetter": "S",
+        "id": 97
+    },
+    {
+        "cityName": "郑州市",
+        "firstLetter": "Z",
+        "id": 98
+    },
+    {
+        "cityName": "安阳市",
+        "firstLetter": "A",
+        "id": 99
+    },
+    {
+        "cityName": "新乡市",
+        "firstLetter": "X",
+        "id": 100
+    },
+    {
+        "cityName": "许昌市",
+        "firstLetter": "X",
+        "id": 101
+    },
+    {
+        "cityName": "焦作市",
+        "firstLetter": "J",
+        "id": 104
+    },
+    {
+        "cityName": "鹤壁市",
+        "firstLetter": "H",
+        "id": 105
+    },
+    {
+        "cityName": "濮阳市",
+        "firstLetter": "P",
+        "id": 106
+    },
+    {
+        "cityName": "周口市",
+        "firstLetter": "Z",
+        "id": 107
+    },
+    {
+        "cityName": "武汉市",
+        "firstLetter": "W",
+        "id": 108
+    },
+    {
+        "cityName": "襄樊市",
+        "firstLetter": "X",
+        "id": 109
+    },
+    {
+        "cityName": "鄂州市",
+        "firstLetter": "E",
+        "id": 110
+    },
+    {
+        "cityName": "孝感市",
+        "firstLetter": "X",
+        "id": 111
+    },
+    {
+        "cityName": "黄冈市",
+        "firstLetter": "H",
+        "id": 112
+    },
+    {
+        "cityName": "黄石市",
+        "firstLetter": "H",
+        "id": 113
+    },
+    {
+        "cityName": "咸宁市",
+        "firstLetter": "X",
+        "id": 114
+    },
+    {
+        "cityName": "荆州市",
+        "firstLetter": "J",
+        "id": 115
+    },
+    {
+        "cityName": "宜昌市",
+        "firstLetter": "Y",
+        "id": 116
+    },
+    {
+        "cityName": "十堰市",
+        "firstLetter": "S",
+        "id": 117
+    },
+    {
+        "cityName": "随州市",
+        "firstLetter": "S",
+        "id": 118
+    },
+    {
+        "cityName": "荆门市",
+        "firstLetter": "J",
+        "id": 119
+    },
+    {
+        "cityName": "仙桃市",
+        "firstLetter": "X",
+        "id": 120
+    },
+    {
+        "cityName": "天门市",
+        "firstLetter": "T",
+        "id": 121
+    },
+    {
+        "cityName": "潜江市",
+        "firstLetter": "Q",
+        "id": 122
+    },
+    {
+        "cityName": "岳阳市",
+        "firstLetter": "Y",
+        "id": 123
+    },
+    {
+        "cityName": "湘潭市",
+        "firstLetter": "X",
+        "id": 124
+    },
+    {
+        "cityName": "株洲市",
+        "firstLetter": "Z",
+        "id": 125
+    },
+    {
+        "cityName": "衡阳市",
+        "firstLetter": "H",
+        "id": 126
+    },
+    {
+        "cityName": "郴州市",
+        "firstLetter": "C",
+        "id": 127
+    },
+    {
+        "cityName": "常德市",
+        "firstLetter": "C",
+        "id": 128
+    },
+    {
+        "cityName": "益阳市",
+        "firstLetter": "Y",
+        "id": 129
+    },
+    {
+        "cityName": "娄底市",
+        "firstLetter": "L",
+        "id": 130
+    },
+    {
+        "cityName": "邵阳市",
+        "firstLetter": "S",
+        "id": 131
+    },
+    {
+        "cityName": "怀化市",
+        "firstLetter": "H",
+        "id": 132
+    },
+    {
+        "cityName": "永州市",
+        "firstLetter": "Y",
+        "id": 133
+    },
+    {
+        "cityName": "汕尾市",
+        "firstLetter": "S",
+        "id": 134
+    },
+    {
+        "cityName": "阳江市",
+        "firstLetter": "Y",
+        "id": 135
+    },
+    {
+        "cityName": "揭阳市",
+        "firstLetter": "J",
+        "id": 136
+    },
+    {
+        "cityName": "茂名市",
+        "firstLetter": "M",
+        "id": 137
+    },
+    {
+        "cityName": "惠州市",
+        "firstLetter": "H",
+        "id": 138
+    },
+    {
+        "cityName": "江门市",
+        "firstLetter": "J",
+        "id": 139
+    },
+    {
+        "cityName": "韶关市",
+        "firstLetter": "S",
+        "id": 140
+    },
+    {
+        "cityName": "梅州市",
+        "firstLetter": "M",
+        "id": 141
+    },
+    {
+        "cityName": "汕头市",
+        "firstLetter": "S",
+        "id": 142
+    },
+    {
+        "cityName": "深圳市",
+        "firstLetter": "S",
+        "id": 143
+    },
+    {
+        "cityName": "珠海市",
+        "firstLetter": "Z",
+        "id": 144
+    },
+    {
+        "cityName": "肇庆市",
+        "firstLetter": "Z",
+        "id": 145
+    },
+    {
+        "cityName": "湛江市",
+        "firstLetter": "Z",
+        "id": 146
+    },
+    {
+        "cityName": "河源市",
+        "firstLetter": "H",
+        "id": 147
+    },
+    {
+        "cityName": "清远市",
+        "firstLetter": "Q",
+        "id": 148
+    },
+    {
+        "cityName": "云浮市",
+        "firstLetter": "Y",
+        "id": 149
+    },
+    {
+        "cityName": "潮州市",
+        "firstLetter": "C",
+        "id": 150
+    },
+    {
+        "cityName": "东莞市",
+        "firstLetter": "D",
+        "id": 151
+    },
+    {
+        "cityName": "兰州市",
+        "firstLetter": "L",
+        "id": 152
+    },
+    {
+        "cityName": "金昌市",
+        "firstLetter": "J",
+        "id": 153
+    },
+    {
+        "cityName": "白银市",
+        "firstLetter": "B",
+        "id": 154
+    },
+    {
+        "cityName": "天水市",
+        "firstLetter": "T",
+        "id": 155
+    },
+    {
+        "cityName": "武威市",
+        "firstLetter": "W",
+        "id": 156
+    },
+    {
+        "cityName": "张掖市",
+        "firstLetter": "Z",
+        "id": 157
+    },
+    {
+        "cityName": "平凉市",
+        "firstLetter": "P",
+        "id": 158
+    },
+    {
+        "cityName": "酒泉市",
+        "firstLetter": "J",
+        "id": 159
+    },
+    {
+        "cityName": "庆阳市",
+        "firstLetter": "Q",
+        "id": 160
+    },
+    {
+        "cityName": "定西市",
+        "firstLetter": "D",
+        "id": 161
+    },
+    {
+        "cityName": "陇南市",
+        "firstLetter": "L",
+        "id": 162
+    },
+    {
+        "cityName": "成都市",
+        "firstLetter": "C",
+        "id": 163
+    },
+    {
+        "cityName": "自贡市",
+        "firstLetter": "Z",
+        "id": 164
+    },
+    {
+        "cityName": "绵阳市",
+        "firstLetter": "M",
+        "id": 165
+    },
+    {
+        "cityName": "达州市",
+        "firstLetter": "D",
+        "id": 166
+    },
+    {
+        "cityName": "巴中市",
+        "firstLetter": "B",
+        "id": 167
+    },
+    {
+        "cityName": "泸州市",
+        "firstLetter": "L",
+        "id": 168
+    },
+    {
+        "cityName": "宜宾市",
+        "firstLetter": "Y",
+        "id": 169
+    },
+    {
+        "cityName": "资阳市",
+        "firstLetter": "Z",
+        "id": 170
+    },
+    {
+        "cityName": "内江市",
+        "firstLetter": "N",
+        "id": 171
+    },
+    {
+        "cityName": "眉山市",
+        "firstLetter": "M",
+        "id": 172
+    },
+    {
+        "cityName": "德阳市",
+        "firstLetter": "D",
+        "id": 173
+    },
+    {
+        "cityName": "贵阳市",
+        "firstLetter": "G",
+        "id": 174
+    },
+    {
+        "cityName": "遵义市",
+        "firstLetter": "Z",
+        "id": 175
+    },
+    {
+        "cityName": "安顺市",
+        "firstLetter": "A",
+        "id": 176
+    },
+    {
+        "cityName": "海口市",
+        "firstLetter": "H",
+        "id": 177
+    },
+    {
+        "cityName": "三亚市",
+        "firstLetter": "S",
+        "id": 178
+    },
+    {
+        "cityName": "琼海市",
+        "firstLetter": "Q",
+        "id": 179
+    },
+    {
+        "cityName": "儋州市",
+        "firstLetter": "D",
+        "id": 180
+    },
+    {
+        "cityName": "东方市",
+        "firstLetter": "D",
+        "id": 181
+    },
+    {
+        "cityName": "昭通市",
+        "firstLetter": "Z",
+        "id": 182
+    },
+    {
+        "cityName": "昆明市",
+        "firstLetter": "K",
+        "id": 183
+    },
+    {
+        "cityName": "保山市",
+        "firstLetter": "B",
+        "id": 184
+    },
+    {
+        "cityName": "玉溪市",
+        "firstLetter": "Y",
+        "id": 185
+    },
+    {
+        "cityName": "普洱市",
+        "firstLetter": "P",
+        "id": 186
+    },
+    {
+        "cityName": "临沧市",
+        "firstLetter": "L",
+        "id": 187
+    },
+    {
+        "cityName": "西宁市",
+        "firstLetter": "X",
+        "id": 188
+    },
+    {
+        "cityName": "西安市",
+        "firstLetter": "X",
+        "id": 189
+    },
+    {
+        "cityName": "咸阳市",
+        "firstLetter": "X",
+        "id": 190
+    },
+    {
+        "cityName": "延安市",
+        "firstLetter": "Y",
+        "id": 191
+    },
+    {
+        "cityName": "榆林市",
+        "firstLetter": "Y",
+        "id": 192
+    },
+    {
+        "cityName": "渭南市",
+        "firstLetter": "W",
+        "id": 193
+    },
+    {
+        "cityName": "商洛市",
+        "firstLetter": "S",
+        "id": 194
+    },
+    {
+        "cityName": "安康市",
+        "firstLetter": "A",
+        "id": 195
+    },
+    {
+        "cityName": "汉中市",
+        "firstLetter": "H",
+        "id": 196
+    },
+    {
+        "cityName": "宝鸡市",
+        "firstLetter": "B",
+        "id": 197
+    },
+    {
+        "cityName": "铜川市",
+        "firstLetter": "T",
+        "id": 198
+    },
+    {
+        "cityName": "崇左市",
+        "firstLetter": "C",
+        "id": 199
+    },
+    {
+        "cityName": "来宾市",
+        "firstLetter": "L",
+        "id": 200
+    },
+    {
+        "cityName": "柳州市",
+        "firstLetter": "L",
+        "id": 201
+    },
+    {
+        "cityName": "桂林市",
+        "firstLetter": "G",
+        "id": 202
+    },
+    {
+        "cityName": "梧州市",
+        "firstLetter": "W",
+        "id": 203
+    },
+    {
+        "cityName": "贺州市",
+        "firstLetter": "H",
+        "id": 204
+    },
+    {
+        "cityName": "贵港市",
+        "firstLetter": "G",
+        "id": 205
+    },
+    {
+        "cityName": "玉林市",
+        "firstLetter": "Y",
+        "id": 206
+    },
+    {
+        "cityName": "钦州市",
+        "firstLetter": "Q",
+        "id": 207
+    },
+    {
+        "cityName": "河池市",
+        "firstLetter": "H",
+        "id": 208
+    },
+    {
+        "cityName": "北海市",
+        "firstLetter": "B",
+        "id": 209
+    },
+    {
+        "cityName": "银川市",
+        "firstLetter": "Y",
+        "id": 210
+    },
+    {
+        "cityName": "吴忠市",
+        "firstLetter": "W",
+        "id": 211
+    },
+    {
+        "cityName": "固原市",
+        "firstLetter": "G",
+        "id": 212
+    },
+    {
+        "cityName": "包头市",
+        "firstLetter": "B",
+        "id": 213
+    },
+    {
+        "cityName": "赤峰市",
+        "firstLetter": "C",
+        "id": 214
+    },
+    {
+        "cityName": "高雄市",
+        "firstLetter": "G",
+        "id": 215
+    },
+    {
+        "cityName": "基隆市",
+        "firstLetter": "J",
+        "id": 216
+    },
+    {
+        "cityName": "新竹市",
+        "firstLetter": "X",
+        "id": 217
+    },
+    {
+        "cityName": "嘉义市",
+        "firstLetter": "J",
+        "id": 218
+    }
+]

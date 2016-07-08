@@ -3,6 +3,7 @@ package com.magic.fancymagic.activity;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.magic.fancymagic.R;
 
@@ -20,4 +21,9 @@ public class BaseActivity extends FinalActivity {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         }
     }
+
+    protected void showToast(String msg) {
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+    }
+
 }

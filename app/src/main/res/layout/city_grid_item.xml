@@ -13,8 +13,8 @@
         android:layout_marginBottom="10dp"
         android:background="@drawable/circle_btn_selector"
         android:clickable="true"
+        android:focusable="true"
         android:gravity="center"
-        android:text="Button"
         android:textColor="@color/mainBackgroundColor"
         android:textSize="15sp" />
 
