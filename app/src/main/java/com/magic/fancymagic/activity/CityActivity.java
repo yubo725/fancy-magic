@@ -65,6 +65,7 @@ public class CityActivity extends BaseActivity {
 
     private MyHandler handler;
 
+    private CityResultDialog cityResultDialog;
     private LoadingDialog loadingDialog;
     private Random random;
 
@@ -90,6 +91,8 @@ public class CityActivity extends BaseActivity {
         loadingDialog.setLoadingMsg("正在加载数据");
         loadingDialog.showLoadingDialog();
 
+        cityResultDialog = new CityResultDialog(this, R.style.loading_dialog);
+
         handler = new MyHandler(this);
         new Thread(new Runnable() {
             @Override
@@ -103,9 +106,12 @@ public class CityActivity extends BaseActivity {
         shakeListener.setOnShakeListener(new ShakeListener.OnShakeListener() {
             @Override
             public void onShake() {
-                Log.e("yubo", "onShake...");
                 PhoneUtils.vibrateOnce(CityActivity.this, 200);
-                showRandomCities();
+                if(cityResultDialog.isShowing()) {
+                    cityResultDialog.reorderCities();
+                } else {
+                    showRandomCities();
+                }
             }
         });
     }
@@ -171,13 +177,8 @@ public class CityActivity extends BaseActivity {
         @Override
         public void onCitySelected(CityBean bean) {
             List<CityBean> list = getConverseCities(resolveCityType(bean));
-            StringBuilder sb = new StringBuilder();
-            for(CityBean item : list) {
-                sb.append(item.getCityName() + ", ");
-            }
-            String converseCites = sb.toString().substring(0, sb.toString().length() - 2);
-            Log.e("yubo", "selected city: " + bean.getCityName() + "\n converse cities: " + converseCites);
-            new CityResultDialog(CityActivity.this, R.style.loading_dialog).showDialog();
+            cityResultDialog.setData(list, bean);
+            cityResultDialog.showDialog();
         }
     };
 

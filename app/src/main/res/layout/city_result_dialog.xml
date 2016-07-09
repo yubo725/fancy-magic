@@ -8,16 +8,32 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_marginLeft="10dp"
+        android:visibility="visible"
+        android:gravity="center"
         android:layout_marginRight="10dp"
         android:background="@drawable/card_bg_shape"
         android:layout_width="match_parent"
-        android:layout_height="360dp">
+        android:layout_height="wrap_content">
 
-        <View
-            android:layout_marginTop="60dp"
-            android:background="#ff0000"
+        <TextView
+            android:id="@+id/hint_text"
+            android:textSize="18sp"
+            android:text="把下面的9个城市读给魔术听吧，颜色不一样的那个是你选择的，记住读到你选择的那个城市时不要紧张哦，摇一摇可以打乱顺序~"
+            android:textColor="@color/mainBackgroundColor"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:lineSpacingMultiplier="1.2"
             android:layout_width="match_parent"
-            android:layout_height="1dp"/>
+            android:layout_height="wrap_content" />
+
+        <GridView
+            android:id="@+id/city_result_grid_view"
+            android:numColumns="3"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
 </LinearLayout>
