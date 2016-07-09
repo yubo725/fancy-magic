@@ -19,7 +19,9 @@
         android:text="在下面的城市中点击选择一个你喜欢的城市，摇动手机可以切换其他城市。"
         android:lineSpacingMultiplier="1.2"
         android:layout_marginTop="15dp"
-        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="top|center_horizontal"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textColor="@color/white"
@@ -27,10 +29,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <GridView
-        android:id="@+id/city_grid_view"
-        android:numColumns="4"
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="0dp">
+
+        <GridView
+            android:id="@+id/city_grid_view"
+            android:numColumns="4"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
 
 </LinearLayout>

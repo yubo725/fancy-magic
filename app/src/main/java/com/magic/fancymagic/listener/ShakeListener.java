@@ -30,7 +30,9 @@ public class ShakeListener implements SensorEventListener {
     private float lastZ;
 
     //上次检测时间
-    private long lastUpdateTime;
+    private long lastUpdateTime = 0;
+
+    private boolean allowShake = true;
 
     //构造器
     public ShakeListener(Context c) {
@@ -68,9 +70,10 @@ public class ShakeListener implements SensorEventListener {
         onShakeListener = listener;
     }
 
-
     //重力感应器感应获得变化数据
     public void onSensorChanged(SensorEvent event) {
+        if(!allowShake)
+            return ;
         //现在检测时间
         long currentUpdateTime = System.currentTimeMillis();
         //两次检测的时间间隔
@@ -100,6 +103,19 @@ public class ShakeListener implements SensorEventListener {
         //达到速度阀值，发出提示
         if(speed >= SPEED_SHRESHOLD) {
             onShakeListener.onShake();
+            //2s后才允许再次摇动
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    allowShake = false;
+                    try {
+                        Thread.sleep(2000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    allowShake = true;
+                }
+            }).start();
         }
     }
 

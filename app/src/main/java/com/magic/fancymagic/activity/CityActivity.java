@@ -23,6 +23,7 @@ import com.magic.fancymagic.view.TitleView;
 import net.tsz.afinal.annotation.view.ViewInject;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
@@ -102,6 +103,7 @@ public class CityActivity extends BaseActivity {
         shakeListener.setOnShakeListener(new ShakeListener.OnShakeListener() {
             @Override
             public void onShake() {
+                Log.e("yubo", "onShake...");
                 PhoneUtils.vibrateOnce(CityActivity.this, 200);
                 showRandomCities();
             }
@@ -111,16 +113,21 @@ public class CityActivity extends BaseActivity {
     //加载城市数据，在子线程中执行
     private void loadCityData() {
         InputStream is = getResources().openRawResource(R.raw.city_data);
-        byte[] buf = new byte[512];
-        int hasRead = 0;
+        BufferedReader br = new BufferedReader(new InputStreamReader(is));
+        String line;
         StringBuilder sb = new StringBuilder();
         try {
-            while((hasRead = is.read(buf)) > 0) {
-                sb.append(new String(buf, 0, hasRead));
+            while((line = br.readLine()) != null) {
+                sb.append(line);
             }
-            is.close();
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                br.close();
+                is.close();
+            } catch (IOException e) {
+            }
         }
         String json = sb.toString();
         cityList = JSON.parseArray(json, CityBean.class);
