@@ -48,17 +48,17 @@ public class CityResultDialog extends Dialog {
 
     public void setData(List<CityBean> converseCityList, CityBean selectedCity) {
         this.selectedCity = selectedCity;
-        this.converseCityList = converseCityList;
         this.selectedCity.setSelected(true);
+        this.converseCityList = converseCityList;
         this.converseCityList.add(this.selectedCity);
         if(cityResultGridAdapter == null) {
             cityResultGridAdapter = new CityResultGridAdapter(getContext(), converseCityList, R.layout.city_result_grid_item);
             resultGridView.setAdapter(cityResultGridAdapter);
-            cities = cityResultGridAdapter.getData();
         }else {
             cityResultGridAdapter.setData(this.converseCityList);
             cityResultGridAdapter.notifyDataSetChanged();
         }
+        cities = cityResultGridAdapter.getData();
     }
 
     private List<CityBean> list = new ArrayList<>();
@@ -71,7 +71,13 @@ public class CityResultDialog extends Dialog {
         while(list.size() != cities.size()) {
             cityBean = cities.get(random.nextInt(cities.size()));
             if(!list.contains(cityBean)) {
-                list.add(cityBean);
+                if(cityBean.equals(selectedCity)) {
+                    cityBean.setSelected(true);
+                    list.add(cityBean);
+                }else {
+                    cityBean.setSelected(false);
+                    list.add(cityBean);
+                }
             }
         }
         cityResultGridAdapter.setData(list);

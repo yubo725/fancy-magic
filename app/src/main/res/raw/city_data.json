@@ -55,11 +55,6 @@
     "id": 11
   },
   {
-    "cityName": "忻州市",
-    "firstLetter": "X",
-    "id": 12
-  },
-  {
     "cityName": "太原市",
     "firstLetter": "T",
     "id": 13
@@ -130,11 +125,6 @@
     "id": 26
   },
   {
-    "cityName": "阜新市",
-    "firstLetter": "F",
-    "id": 27
-  },
-  {
     "cityName": "辽阳市",
     "firstLetter": "L",
     "id": 28
@@ -183,11 +173,6 @@
     "cityName": "鹤岗市",
     "firstLetter": "H",
     "id": 37
-  },
-  {
-    "cityName": "绥化市",
-    "firstLetter": "S",
-    "id": 38
   },
   {
     "cityName": "黑河市",
@@ -243,11 +228,6 @@
     "cityName": "舟山市",
     "firstLetter": "Z",
     "id": 49
-  },
-  {
-    "cityName": "衢州市",
-    "firstLetter": "Q",
-    "id": 50
   },
   {
     "cityName": "杭州市",
@@ -315,11 +295,6 @@
     "id": 63
   },
   {
-    "cityName": "阜阳市",
-    "firstLetter": "F",
-    "id": 64
-  },
-  {
     "cityName": "巢湖市",
     "firstLetter": "C",
     "id": 65
@@ -343,11 +318,6 @@
     "cityName": "福州市",
     "firstLetter": "F",
     "id": 69
-  },
-  {
-    "cityName": "莆田市",
-    "firstLetter": "P",
-    "id": 70
   },
   {
     "cityName": "泉州市",
@@ -400,11 +370,6 @@
     "id": 80
   },
   {
-    "cityName": "赣州市",
-    "firstLetter": "G",
-    "id": 81
-  },
-  {
     "cityName": "萍乡市",
     "firstLetter": "P",
     "id": 82
@@ -420,19 +385,9 @@
     "id": 84
   },
   {
-    "cityName": "淄博市",
-    "firstLetter": "Z",
-    "id": 85
-  },
-  {
     "cityName": "德州市",
     "firstLetter": "D",
     "id": 86
-  },
-  {
-    "cityName": "潍坊市",
-    "firstLetter": "W",
-    "id": 87
   },
   {
     "cityName": "泰安市",
@@ -468,11 +423,6 @@
     "cityName": "日照市",
     "firstLetter": "R",
     "id": 94
-  },
-  {
-    "cityName": "莱芜市",
-    "firstLetter": "L",
-    "id": 95
   },
   {
     "cityName": "聊城市",
@@ -595,11 +545,6 @@
     "id": 126
   },
   {
-    "cityName": "郴州市",
-    "firstLetter": "C",
-    "id": 127
-  },
-  {
     "cityName": "常德市",
     "firstLetter": "C",
     "id": 128
@@ -685,11 +630,6 @@
     "id": 144
   },
   {
-    "cityName": "肇庆市",
-    "firstLetter": "Z",
-    "id": 145
-  },
-  {
     "cityName": "湛江市",
     "firstLetter": "Z",
     "id": 146
@@ -745,11 +685,6 @@
     "id": 156
   },
   {
-    "cityName": "张掖市",
-    "firstLetter": "Z",
-    "id": 157
-  },
-  {
     "cityName": "平凉市",
     "firstLetter": "P",
     "id": 158
@@ -768,11 +703,6 @@
     "cityName": "定西市",
     "firstLetter": "D",
     "id": 161
-  },
-  {
-    "cityName": "陇南市",
-    "firstLetter": "L",
-    "id": 162
   },
   {
     "cityName": "成都市",
@@ -860,19 +790,9 @@
     "id": 179
   },
   {
-    "cityName": "儋州市",
-    "firstLetter": "D",
-    "id": 180
-  },
-  {
     "cityName": "东方市",
     "firstLetter": "D",
     "id": 181
-  },
-  {
-    "cityName": "昭通市",
-    "firstLetter": "Z",
-    "id": 182
   },
   {
     "cityName": "昆明市",
@@ -920,11 +840,6 @@
     "id": 191
   },
   {
-    "cityName": "榆林市",
-    "firstLetter": "Y",
-    "id": 192
-  },
-  {
     "cityName": "渭南市",
     "firstLetter": "W",
     "id": 193
@@ -953,11 +868,6 @@
     "cityName": "铜川市",
     "firstLetter": "T",
     "id": 198
-  },
-  {
-    "cityName": "崇左市",
-    "firstLetter": "C",
-    "id": 199
   },
   {
     "cityName": "来宾市",
