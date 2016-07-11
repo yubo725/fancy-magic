@@ -16,9 +16,9 @@
 
     <TextView
         android:id="@+id/city_hint_tv"
+        android:layout_marginTop="5dp"
         android:text="在下面的城市中点击选择一个你喜欢的城市，摇动手机可以切换其他城市。"
         android:lineSpacingMultiplier="1.2"
-        android:layout_marginTop="15dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:gravity="top|center_horizontal"

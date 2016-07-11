@@ -44,6 +44,9 @@ public class TitleView extends RelativeLayout {
     private void init() {
         View view = inflate(getContext(), R.layout.title_view_layout, this);
         FinalActivity.initInjectedView(this, view);
+        if(isInEditMode()) {
+            return ;
+        }
         titleTv.setTypeface(BaseApplication.getInstance().getTypeface());
         backBtn.setOnClickListener(backBtnDefaultClickListener);
     }
