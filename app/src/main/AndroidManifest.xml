@@ -22,7 +22,8 @@
         <activity android:name=".activity.BaseActivity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.CityActivity" />
-        <activity android:name=".activity.MonthActivity"></activity>
+        <activity android:name=".activity.MonthActivity" />
+        <activity android:name=".activity.SpiritActivity"></activity>
     </application>
 
 </manifest>
