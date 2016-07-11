@@ -2,8 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.magic.fancymagic">
 
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:name=".BaseApplication"
         android:allowBackup="true"
@@ -20,7 +21,8 @@
         </activity>
         <activity android:name=".activity.BaseActivity" />
         <activity android:name=".activity.MainActivity" />
-        <activity android:name=".activity.CityActivity"></activity>
+        <activity android:name=".activity.CityActivity" />
+        <activity android:name=".activity.MonthActivity"></activity>
     </application>
 
 </manifest>
