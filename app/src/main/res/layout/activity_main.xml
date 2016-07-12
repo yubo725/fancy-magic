@@ -10,12 +10,28 @@
     android:background="@color/mainBackgroundColor"
     tools:context=".activity.MainActivity">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/view_pager"
+    <FrameLayout
         android:clipChildren="false"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:clipChildren="false"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.magic.fancymagic.view.DotView
+            android:id="@+id/dot_view"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="35dp"/>
+
+    </FrameLayout>
+
+
 
 </LinearLayout>

@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import com.magic.fancymagic.R;
 import com.magic.fancymagic.adapter.ViewPagerAdapter;
 import com.magic.fancymagic.view.CityPagerView;
+import com.magic.fancymagic.view.DotView;
 import com.magic.fancymagic.view.MonthPagerView;
 import com.magic.fancymagic.view.SpiritPagerView;
 
@@ -24,6 +25,9 @@ public class MainActivity extends BaseActivity {
 
     @ViewInject(id = R.id.view_pager)
     ViewPager viewPager;
+
+    @ViewInject(id = R.id.dot_view)
+    DotView dotView;
 
     private ViewPagerAdapter adapter;
     private CityPagerView cityPagerView;
@@ -59,5 +63,6 @@ public class MainActivity extends BaseActivity {
                 return viewPager.dispatchTouchEvent(event);
             }
         });
+        dotView.setViewPager(viewPager);
     }
 }
