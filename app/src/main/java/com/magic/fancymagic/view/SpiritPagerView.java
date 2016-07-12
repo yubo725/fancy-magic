@@ -60,7 +60,9 @@ public class SpiritPagerView extends LinearLayout {
                 if(TextUtils.isEmpty(phoneStr) || !isPhoneNumValid(phoneStr)) {
                     Toast.makeText(getContext(), "请输入正确的手机号码", Toast.LENGTH_SHORT).show();
                 }else {
-                    getContext().startActivity(new Intent(getContext(), SpiritActivity.class));
+                    Intent intent = new Intent(getContext(), SpiritActivity.class);
+                    intent.putExtra("PhoneNumber", phoneStr);
+                    getContext().startActivity(intent);
                 }
             }
         });
