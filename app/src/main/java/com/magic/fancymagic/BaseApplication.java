@@ -3,6 +3,8 @@ package com.magic.fancymagic;
 import android.app.Application;
 import android.graphics.Typeface;
 
+import com.magic.fancymagic.utils.SPUtils;
+
 /**
  * Created by yubo on 2016/7/7.
  */
@@ -14,6 +16,7 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        SPUtils.init(this);
 
         /** 加载字体 */
         String path = "fonts/fzktjt.ttf";

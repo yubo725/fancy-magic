@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/mainBackgroundColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="20sp"
+            android:text="什么更有趣？"
+            android:textColor="@color/mainBackgroundColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/mainBackgroundColor"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <TextView
+            android:id="@+id/tv_answer1"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:lines="1"
+            android:clickable="true"
+            android:background="@drawable/answer_tv_selector"
+            android:textColor="@color/mainBackgroundColor"
+            android:text="1、这里显示答案（+15分）"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/tv_answer2"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:lines="1"
+            android:background="@drawable/answer_tv_selector"
+            android:textColor="@color/mainBackgroundColor"
+            android:text="2、这里显示答案（-30分）"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

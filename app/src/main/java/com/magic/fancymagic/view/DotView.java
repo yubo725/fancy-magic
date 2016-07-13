@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.magic.fancymagic.R;
+import com.magic.fancymagic.utils.SPUtils;
 
 import net.tsz.afinal.FinalActivity;
 import net.tsz.afinal.annotation.view.ViewInject;
@@ -67,6 +68,14 @@ public class DotView extends LinearLayout {
         @Override
         public void onPageSelected(int position) {
             selectDot(position);
+            if(position == 2) {
+                boolean phoneSaved = SPUtils.getInstance().getBoolean(SPUtils.PHONE_SAVED, false);
+                if(!phoneSaved) {
+                    //显示提示对话框
+                    SpiritHintDialog hintDialog = new SpiritHintDialog(getContext(), R.style.loading_dialog);
+                    hintDialog.show();
+                }
+            }
         }
 
         @Override

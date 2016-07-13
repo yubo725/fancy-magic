@@ -2,44 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/mainBackgroundColor"
     android:orientation="vertical">
 
     <LinearLayout
         android:orientation="vertical"
         android:background="@drawable/card_bg_shape"
         android:layout_width="match_parent"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_height="match_parent">
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
 
-        <ImageView
-            android:src="@mipmap/img_spirit"
-            android:layout_marginTop="50dp"
-            android:scaleType="centerInside"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <ImageView
-            android:src="@mipmap/spirit01"
-            android:layout_marginTop="30dp"
-            android:scaleType="centerInside"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <ImageView
-            android:src="@mipmap/spirit02"
-            android:scaleType="centerInside"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/hint_tv"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/mainBackgroundColor"
+            android:text="在开始这个魔术之前，你必须先设置你的手机号（仅一次），这个魔术最终会将你的手机号展示出来，而观赏这个魔术的人并不知道你事先设置了手机号，在下面输入你的手机号并保存吧~"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:gravity="center"
-            android:layout_marginTop="80dp"
             android:layout_height="wrap_content">
 
             <ImageView
@@ -63,7 +52,6 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     android:gravity="center"
-                    android:text="13297934919"
                     android:hint="输入你的手机号"
                     android:layout_width="match_parent"
                     android:layout_height="50dp" />
@@ -83,19 +71,19 @@
         </LinearLayout>
 
         <LinearLayout
-            android:gravity="bottom|center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/start_btn"
-                android:background="@drawable/cancel_btn_selector"
-                android:text="开始"
-                android:layout_marginBottom="30dp"
-                android:textSize="20sp"
+                android:id="@+id/save_btn"
+                android:background="@drawable/ok_btn_selector"
                 android:textColor="@color/white"
-                android:layout_width="150dp"
-                android:layout_height="60dp" />
+                android:textSize="15sp"
+                android:text="保存"
+                android:layout_width="100dp"
+                android:layout_height="45dp" />
 
         </LinearLayout>
 

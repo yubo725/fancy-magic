@@ -28,6 +28,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Enumeration;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by yubo on 2015/7/22.
@@ -299,5 +301,12 @@ public class PhoneUtils {
             return a > b ? -1 : (a == b ? 0 : 1);
         }
     };
+
+    /** 正则判断手机号是否合法 */
+    public static boolean isPhoneNumberValid(String phoneStr) {
+        Pattern pattern = Pattern.compile("^((13[0-9])|(15[^4,\\D])|(18[0,5-9]))\\d{8}$");
+        Matcher matcher = pattern.matcher(phoneStr);
+        return matcher.matches();
+    }
 
 }

@@ -29,4 +29,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" >
+
+        <Button
+            android:id="@+id/start_btn"
+            android:textColor="@color/mainBackgroundColor"
+            android:textSize="30sp"
+            android:text="开始\n答题"
+            android:background="@drawable/circle_btn_selector"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <com.magic.fancymagic.view.QuestionView
+            android:id="@+id/question_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <com.magic.fancymagic.view.NumberView
+        android:id="@+id/number_view_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 </LinearLayout>
