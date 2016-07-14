@@ -4,12 +4,41 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:gravity="center"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:text="City"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="@color/white"
+                android:text="　　城市读心术的秘诀就在于每个城市的汉字对应的拼音首字母，在26个大写字母中，可以按字母笔画分为两类，一类是类似A、E、F、H等只包含直线笔画的字母，一类是类似B、C、O、P、Q等含有曲线笔画的字母，当你选择了某个城市时，如下图所示："
+                android:textSize="18sp" />
+
+            <ImageView
+                android:src="@mipmap/city_example"
+                android:layout_marginBottom="5dp"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.5"
+                android:text="　　在出现的9个城市中，被选中的城市的拼音首字母和其他的城市是不同类的，武汉市打头字母为W，是直线类的字母，而其余的8个城市打头字母全部是包含曲线的，所以，不管对方按什么顺序念这9个城市名，都能知道对方选择的那个城市，不过，前提是你要能很快判断出某个城市属于哪一类哦~"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

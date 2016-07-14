@@ -4,12 +4,50 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:gravity="center"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:text="Spirit"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="@color/white"
+                android:text="　　心灵密码这个魔术，关键点就在于第一次玩之前预先设置好手机号，如果你想撩妹，赶紧先把自己的手机号存起来吧，你喜欢的妹纸答题时不管选的哪一项，最后计算出来的都是你预先设置好的手机号，说不定妹纸真的就打给你了~如果你想重置预留的手机号，在本文末尾点击重置按钮即可。"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:src="@mipmap/spirit_example"
+                android:layout_marginBottom="5dp"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/reset_phone_btn"
+                    android:background="@drawable/cancel_btn_selector"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="重置预留的手机号"
+                    android:layout_width="200dp"
+                    android:layout_height="45dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

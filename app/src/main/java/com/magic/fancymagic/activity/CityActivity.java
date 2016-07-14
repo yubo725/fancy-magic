@@ -4,10 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
 import android.widget.GridView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
 import com.magic.fancymagic.BaseApplication;
@@ -22,15 +20,11 @@ import com.magic.fancymagic.view.TitleView;
 
 import net.tsz.afinal.annotation.view.ViewInject;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.ref.WeakReference;
-import java.security.spec.ECField;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -118,7 +112,7 @@ public class CityActivity extends BaseActivity {
 
     //加载城市数据，在子线程中执行
     private void loadCityData() {
-        InputStream is = getResources().openRawResource(R.raw.city_data);
+        InputStream is = getResources().openRawResource(R.raw.city);
         BufferedReader br = new BufferedReader(new InputStreamReader(is));
         String line;
         StringBuilder sb = new StringBuilder();

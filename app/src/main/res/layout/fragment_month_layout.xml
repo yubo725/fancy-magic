@@ -4,12 +4,40 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:gravity="center"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:text="Month"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="@color/white"
+                android:text="　　你肯定在好奇，为什么要求按从左到右，从上到下的顺序来读12个月份，魔术的奥秘就在这个地方，用下面的图来说明吧："
+                android:textSize="18sp" />
+
+            <ImageView
+                android:src="@mipmap/month_example"
+                android:layout_marginBottom="5dp"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.5"
+                android:text="　　魔术师是怎么猜到对方选择的是6月份而不是其他的月份呢？一个提示信息就是当前显示的第一个月份，上图中显示的是5月份，则数字5告诉了魔术师，对方选择的月份在按从左到右，从上到下的顺序的第5位，就这么简单~"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
