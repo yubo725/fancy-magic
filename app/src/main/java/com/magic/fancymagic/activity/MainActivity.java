@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 
 import com.magic.fancymagic.R;
 import com.magic.fancymagic.adapter.ViewPagerAdapter;
+import com.magic.fancymagic.utils.FileUtils;
 import com.magic.fancymagic.utils.PhoneUtils;
 import com.magic.fancymagic.view.CityPagerView;
 import com.magic.fancymagic.view.DotView;
@@ -44,12 +45,17 @@ public class MainActivity extends BaseActivity {
     private SpiritPagerView spiritPagerView;
 
     private SettingsDialog settingsDialog;
+    private PwdDialog pwdDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+
+        if(FileUtils.pwdExist(this)) {
+            pwdDialog.show();
+        }
     }
 
     private void initView() {
@@ -77,6 +83,7 @@ public class MainActivity extends BaseActivity {
         dotView.setViewPager(viewPager);
 
         settingsDialog = new SettingsDialog(this, R.style.loading_dialog);
+        pwdDialog = new PwdDialog(this, R.style.loading_dialog);
     }
 
     public void moreBtnClick(View view) {
