@@ -4,13 +4,18 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.magic.fancymagic.R;
 import com.magic.fancymagic.adapter.ViewPagerAdapter;
+import com.magic.fancymagic.utils.PhoneUtils;
 import com.magic.fancymagic.view.CityPagerView;
 import com.magic.fancymagic.view.DotView;
 import com.magic.fancymagic.view.MonthPagerView;
+import com.magic.fancymagic.view.PwdDialog;
+import com.magic.fancymagic.view.SettingsDialog;
 import com.magic.fancymagic.view.SpiritPagerView;
 
 import net.tsz.afinal.annotation.view.ViewInject;
@@ -29,10 +34,15 @@ public class MainActivity extends BaseActivity {
     @ViewInject(id = R.id.dot_view)
     DotView dotView;
 
+    @ViewInject(id = R.id.btn_more, click = "moreBtnClick")
+    ImageView moreBtn;
+
     private ViewPagerAdapter adapter;
     private CityPagerView cityPagerView;
     private MonthPagerView monthPagerView;
     private SpiritPagerView spiritPagerView;
+
+    private SettingsDialog settingsDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,5 +74,11 @@ public class MainActivity extends BaseActivity {
             }
         });
         dotView.setViewPager(viewPager);
+
+        settingsDialog = new SettingsDialog(this, R.style.loading_dialog);
+    }
+
+    public void moreBtnClick(View view) {
+        settingsDialog.show();
     }
 }

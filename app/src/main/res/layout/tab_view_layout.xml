@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackgroundColor"
+    android:orientation="horizontal">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/tab_view_shape"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab1"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:text="城市读心术"
+            android:background="@drawable/tab_left_btn_selector"
+            android:lines="1"
+            android:checked="true"
+            android:button="@null"
+            android:textColor="@color/tab_btn_text_color_selector"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/tab2"
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:lines="1"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:text="喜欢的月份"
+            android:background="@drawable/tab_center_btn_selector"
+            android:textColor="@color/tab_btn_text_color_selector"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/tab3"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:lines="1"
+            android:background="@drawable/tab_right_btn_selector"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="心灵密码"
+            android:textColor="@color/tab_btn_text_color_selector"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+
+</LinearLayout>

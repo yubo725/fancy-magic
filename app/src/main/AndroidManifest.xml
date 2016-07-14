@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name=".BaseApplication"
@@ -23,7 +25,8 @@
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.CityActivity" />
         <activity android:name=".activity.MonthActivity" />
-        <activity android:name=".activity.SpiritActivity"></activity>
+        <activity android:name=".activity.SpiritActivity" />
+        <activity android:name=".activity.SecretActivity"></activity>
     </application>
 
 </manifest>

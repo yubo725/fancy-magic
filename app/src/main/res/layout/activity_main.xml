@@ -15,6 +15,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <LinearLayout
+            android:gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn_more"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/ic_more"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
         <android.support.v4.view.ViewPager
             android:id="@+id/view_pager"
             android:clipChildren="false"
