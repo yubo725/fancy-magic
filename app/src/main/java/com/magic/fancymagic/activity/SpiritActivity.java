@@ -12,6 +12,7 @@ import com.magic.fancymagic.utils.SPUtils;
 import com.magic.fancymagic.utils.SpiritUtils;
 import com.magic.fancymagic.view.NumberView;
 import com.magic.fancymagic.view.QuestionView;
+import com.magic.fancymagic.view.SpiritResultDialog;
 import com.magic.fancymagic.view.TitleView;
 
 import net.tsz.afinal.annotation.view.ViewInject;
@@ -40,6 +41,9 @@ public class SpiritActivity extends BaseActivity {
     QuestionView questionView;
 
     private String phoneNum;
+    private SpiritUtils spiritUtils;
+
+    private SpiritResultDialog spiritResultDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,16 +62,37 @@ public class SpiritActivity extends BaseActivity {
         hintTv.setTypeface(BaseApplication.getInstance().getTypeface());
         startBtn.setTypeface(BaseApplication.getInstance().getTypeface());
 
+        spiritResultDialog = new SpiritResultDialog(this, R.style.loading_dialog);
+        spiritResultDialog.setOnDialogCloseListener(new SpiritResultDialog.OnDialogCloseListener() {
+            @Override
+            public void onDialogClosed() {
+                questionView.setVisibility(View.GONE);
+                startBtn.setVisibility(View.VISIBLE);
+                resultNumberView.setResultNumberView(true);
+            }
+        });
+
         boolean phoneSaved = SPUtils.getInstance().getBoolean(SPUtils.PHONE_SAVED, false);
         if(phoneSaved) {
             resultNumberView.setPhoneNumber(SPUtils.getInstance().getString(SPUtils.PHONE_NUM, ""));
+            resultNumberView.setResultNumberView(true);
         }
     }
+
+    private SpiritUtils.OnCompleteListener onCompleteListener = new SpiritUtils.OnCompleteListener() {
+        @Override
+        public void onComplete() {
+            questionView.resetQuestionIndex();
+            spiritResultDialog.show();
+        }
+    };
 
     public void startBtnClick(View view) {
         view.setVisibility(View.GONE);
         questionView.setVisibility(View.VISIBLE);
-        new SpiritUtils(numberView, resultNumberView, questionView).startQuestion();
+        spiritUtils = new SpiritUtils(numberView, resultNumberView, questionView);
+        spiritUtils.setOnCompleteListener(onCompleteListener);
+        spiritUtils.startQuestion();
     }
 
 }

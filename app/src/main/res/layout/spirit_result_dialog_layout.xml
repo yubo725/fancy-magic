@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="15dp"
+        android:background="@drawable/card_bg_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/hint_tv"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/mainBackgroundColor"
+            android:text="很有趣的选择哦，下面这组奇怪的数字是完全通过你的电话号码和心理测试而得出来的，让我们来看一看吧...而且，这组数字同时也是你命运中的人的电话号码哦！不相信吗？不信现在就打打看吧~对了，打的时候要先拨{prefix}哦，也许就是你身边某个意想不到的人呢！"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/phone_text_view"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/mainBackgroundColor"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/ok_btn"
+                android:background="@drawable/cancel_btn_selector"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="确定"
+                android:layout_width="100dp"
+                android:layout_height="45dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

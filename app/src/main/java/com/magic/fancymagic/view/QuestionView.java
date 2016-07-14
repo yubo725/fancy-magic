@@ -2,6 +2,7 @@ package com.magic.fancymagic.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -86,22 +87,19 @@ public class QuestionView extends LinearLayout {
 
     public void showQuestion(int[] scores) {
         questionIndex++;
+        Log.e("yubo", "question index = " + questionIndex);
         SpiritBean bean = questions.get(questionIndex);
         titleTv.setText(bean.getTitle());
         answer1Tv.setText(String.format("1、%s", bean.getAnswer1()));
         answer2Tv.setText(String.format("2、%s", bean.getAnswer2()));
         if(scores[0] > 0) {
-            answer1Tv.append(String.format("（+%d分）", scores[0]));
+            answer1Tv.append(String.format("（+%d）", scores[0]));
         }else {
-            answer1Tv.append(String.format("（-%d分）", -scores[0]));
+            answer1Tv.append(String.format("（%d）", scores[0]));
         }
-        if(scores[1] > 0) {
-            answer2Tv.append(String.format("（+%d分）", scores[1]));
-        }else {
-            answer2Tv.append(String.format("（-%d分）", -scores[1]));
-        }
-        answer1Tv.setTag(scores[0]);
-        answer2Tv.setTag(scores[1]);
+        answer2Tv.append(String.format("（%d-）", scores[1]));
+        answer1Tv.setTag(scores[0] + "");
+        answer2Tv.setTag(scores[1] + "-");
         answer1Tv.setOnClickListener(onAnswerClickListener);
         answer2Tv.setOnClickListener(onAnswerClickListener);
     }
@@ -109,7 +107,7 @@ public class QuestionView extends LinearLayout {
     private OnClickListener onAnswerClickListener = new OnClickListener() {
         @Override
         public void onClick(View v) {
-            int score = (int) v.getTag();
+            String score = (String) v.getTag();
             if(listener != null) {
                 listener.onQuestionSelected(questionIndex, score);
             }
@@ -117,7 +115,7 @@ public class QuestionView extends LinearLayout {
     };
 
     public interface OnQuestionSelectedListener {
-        void onQuestionSelected(int index, int score);
+        void onQuestionSelected(int index, String scoreStr);
     }
 
     public void setOnQuestionSelectedListener(OnQuestionSelectedListener listener) {
@@ -129,6 +127,10 @@ public class QuestionView extends LinearLayout {
     //返回当前问题索引
     public int getQuestionIndex() {
         return questionIndex;
+    }
+
+    public void resetQuestionIndex() {
+        questionIndex = -1;
     }
 
 }

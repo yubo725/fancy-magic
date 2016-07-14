@@ -45,6 +45,8 @@ public class NumberView extends LinearLayout {
 
     private static SparseArray<String> numberMap;
 
+    private List<TextView> list;
+
     static {
         numberMap = new SparseArray<>();
         numberMap.put(0, "零");
@@ -77,6 +79,11 @@ public class NumberView extends LinearLayout {
     private void init() {
         View view = inflate(getContext(), R.layout.number_view_layout, this);
         FinalActivity.initInjectedView(this, view);
+        list = new ArrayList<>();
+        list.add(tv1);
+        list.add(tv2);
+        list.add(tv3);
+        list.add(tv4);
     }
 
     public void setPhoneNumber(String phoneStr) {
@@ -84,18 +91,22 @@ public class NumberView extends LinearLayout {
             String num1Str = phoneStr.substring(3, 5);
             num1 = Integer.parseInt(num1Str);
             tv1.setText(convertNum(num1Str));
+            tv1.setTag(num1);
 
             String num2Str = phoneStr.substring(5, 7);
             num2 = Integer.parseInt(num2Str);
             tv2.setText(convertNum(num2Str));
+            tv2.setTag(num2);
 
             String num3Str = phoneStr.substring(7, 9);
             num3 = Integer.parseInt(num3Str);
             tv3.setText(convertNum(num3Str));
+            tv3.setTag(num3);
 
             String num4Str = phoneStr.substring(9, 11);
             num4 = Integer.parseInt(num4Str);
             tv4.setText(convertNum(num4Str));
+            tv4.setTag(num4);
 
             Typeface typeFace = BaseApplication.getInstance().getTypeface();
             tv1.setTypeface(typeFace);
@@ -104,6 +115,37 @@ public class NumberView extends LinearLayout {
             tv4.setTypeface(typeFace);
         }else {
             Toast.makeText(NumberView.this.getContext(), "手机号不合法", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void setResultNumberView(boolean b) {
+        if(b) {
+            tv1.setText("");
+            tv2.setText("");
+            tv3.setText("");
+            tv4.setText("");
+        }
+    }
+
+    public void showNumber(int num) {
+        for(TextView tv : list) {
+            int n = (int) tv.getTag();
+            if(n == num) {
+                tv.setText(convertNum(String.valueOf(num)));
+            }
+        }
+    }
+
+    public void setHighLight(int index) {
+        for(int i = 0; i < list.size(); i++) {
+            TextView tv = list.get(i);
+            if(i == index) {
+                tv.setBackgroundColor(getResources().getColor(R.color.red));
+                tv.setTextColor(getResources().getColor(R.color.white));
+            }else {
+                tv.setBackgroundColor(getResources().getColor(R.color.white));
+                tv.setTextColor(getResources().getColor(R.color.mainBackgroundColor));
+            }
         }
     }
 
