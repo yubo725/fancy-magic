@@ -5,6 +5,7 @@ import android.support.v4.view.ViewPager;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -26,7 +27,7 @@ import java.util.List;
 public class MainActivity extends BaseActivity {
 
     @ViewInject(id = R.id.view_pager_container)
-    LinearLayout viewPagerContainer;
+    FrameLayout viewPagerContainer;
 
     @ViewInject(id = R.id.view_pager)
     ViewPager viewPager;
