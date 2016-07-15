@@ -11,9 +11,13 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    lintOptions {//在build apk 时Android Lint产生的错误不会导致中断生成APK
+        checkReleaseBuilds false
+        abortOnError false
+    }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -25,4 +29,16 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile files('libs/afinal_0.5.1_bin.jar')
     compile files('libs/fastjson-1.1.28.jar')
+    compile files('libs/MobCommons-2016.0707.1708.jar')
+    compile files('libs/MobTools-2016.0707.1708.jar')
+    compile files('libs/ShareSDK-Core-2.7.4.jar')
+    compile files('libs/ShareSDK-QQ-2.7.4.jar')
+    compile files('libs/ShareSDK-QZone-2.7.4.jar')
+    compile files('libs/ShareSDK-ShortMessage-2.7.4.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.7.4.jar')
+    compile files('libs/ShareSDK-TencentWeibo-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.7.4.jar')
 }

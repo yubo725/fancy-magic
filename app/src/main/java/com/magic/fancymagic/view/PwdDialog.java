@@ -54,10 +54,31 @@ public class PwdDialog extends Dialog {
         String pwdStr = pwdEt.getText().toString();
         if(TextUtils.isEmpty(pwdStr)) {
             Toast.makeText(getContext(), "请输入密码", Toast.LENGTH_SHORT).show();
+            checkPwdResult(false);
         }else if(!FileUtils.checkPwd(getContext(), pwdStr)) {
             Toast.makeText(getContext(), "密码不正确", Toast.LENGTH_SHORT).show();
+            checkPwdResult(false);
         }else {
             dismiss();
+            checkPwdResult(true);
+        }
+    }
+
+    private void checkPwdResult(boolean valid) {
+        if(this.onPwdCheckedListener != null) {
+            onPwdCheckedListener.onPwdChecked(valid);
+        }
+    }
+
+    public interface OnPwdCheckedListener {
+        void onPwdChecked(boolean valid);
+    }
+
+    private OnPwdCheckedListener onPwdCheckedListener;
+
+    public void setOnPwdCheckedListener(OnPwdCheckedListener listener) {
+        if(listener != null) {
+            this.onPwdCheckedListener = listener;
         }
     }
 
