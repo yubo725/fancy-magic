@@ -3,7 +3,7 @@
 
 ## 扫描这里的二维码下载应用：
 
-![image](https://github.com/yubo725/FancyMagic/blob/master/screenshot/qr_code.png)
+![image](https://github.com/yubo725/FancyMagic/blob/master/screenshot/download_qrcode.png)
 
 ## 应用截图如下：
 
