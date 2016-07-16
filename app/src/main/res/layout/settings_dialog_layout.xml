@@ -31,7 +31,7 @@
             android:layout_height="0.5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:background="@color/mainBackgroundColor"
+            android:background="@color/blueDividerColor"
             />
 
         <TextView
@@ -50,7 +50,7 @@
             android:layout_height="0.5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:background="@color/mainBackgroundColor"
+            android:background="@color/blueDividerColor"
             />
 
         <TextView
@@ -61,6 +61,25 @@
             android:textColor="@color/mainBackgroundColor"
             android:textSize="20sp"
             android:text="分享给好友"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/blueDividerColor"
+            />
+
+        <TextView
+            android:id="@+id/reward_menu"
+            android:clickable="true"
+            android:background="@drawable/answer_tv_selector"
+            android:gravity="center"
+            android:textColor="@color/mainBackgroundColor"
+            android:textSize="20sp"
+            android:text="打赏开发者"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
 

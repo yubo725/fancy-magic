@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.magic.fancymagic.BaseApplication;
 import com.magic.fancymagic.R;
+import com.magic.fancymagic.activity.RewardActivity;
 import com.magic.fancymagic.activity.SecretActivity;
 import com.magic.fancymagic.utils.FileUtils;
 
@@ -32,6 +33,9 @@ public class SettingsDialog extends Dialog {
     @ViewInject(id = R.id.share_menu, click = "menuClicked")
     TextView shareBtn;
 
+    @ViewInject(id = R.id.reward_menu, click = "menuClicked")
+    TextView rewardBtn;
+
     private SetPwdDialog setPwdDialog;
     private PwdDialog pwdDialog;
     private int selectedMenuId;
@@ -49,6 +53,7 @@ public class SettingsDialog extends Dialog {
         secretBtn.setTypeface(BaseApplication.getInstance().getTypeface());
         pwdBtn.setTypeface(BaseApplication.getInstance().getTypeface());
         shareBtn.setTypeface(BaseApplication.getInstance().getTypeface());
+        rewardBtn.setTypeface(BaseApplication.getInstance().getTypeface());
 
         setPwdDialog = new SetPwdDialog(getContext(), R.style.loading_dialog);
         pwdDialog = new PwdDialog(getContext(), R.style.loading_dialog);
@@ -92,6 +97,9 @@ public class SettingsDialog extends Dialog {
             case R.id.share_menu: //分享
                 share();
                 break;
+            case R.id.reward_menu: //打赏
+                getContext().startActivity(new Intent(getContext(), RewardActivity.class));
+                break;
         }
         dismiss();
     }
@@ -100,7 +108,7 @@ public class SettingsDialog extends Dialog {
         ShareSDK.initSDK(getContext());
         OnekeyShare oks = new OnekeyShare();
 
-        String url = "http://fir.im/3fzt";
+        String shareUrl = "http://a.app.qq.com/o/simple.jsp?pkgname=com.magic.fancymagic";
 
         //关闭sso授权
         oks.disableSSOWhenAuthorize();
@@ -111,17 +119,17 @@ public class SettingsDialog extends Dialog {
         // titleUrl是标题的网络链接，仅在人人网和QQ空间使用
         oks.setTitleUrl("http://fir.im/3fzt");
         // text是分享文本，所有平台都需要这个字段
-        oks.setText("我正在使用小小魔术这个APP，很好玩的魔术应用，你也来试试吧~");
+        oks.setText("我正在使用小小魔术这个APP，很好玩的魔术应用，你也来试试吧~" + shareUrl);
         // imagePath是图片的本地路径，Linked-In以外的平台都支持此参数
         //oks.setImagePath("/sdcard/test.jpg");//确保SDcard下面存在此张图片
         // url仅在微信（包括好友和朋友圈）中使用
-        oks.setUrl(url);
+        oks.setUrl(shareUrl);
         // comment是我对这条分享的评论，仅在人人网和QQ空间使用
 //        oks.setComment("我是测试评论文本");
         // site是分享此内容的网站名称，仅在QQ空间使用
-        oks.setSite(url);
+        oks.setSite(shareUrl);
         // siteUrl是分享此内容的网站地址，仅在QQ空间使用
-        oks.setSiteUrl(url);
+        oks.setSiteUrl(shareUrl);
 
         // 启动分享GUI
         oks.show(getContext());
